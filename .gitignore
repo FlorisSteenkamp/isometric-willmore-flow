@@ -2,3 +2,5 @@
 npm-debug.log
 /papers/
 node_modules
+# built by the Pages workflow (.github/workflows/pages.yml)
+/dist/
