@@ -1,0 +1,5 @@
+* skeleton code is in the papers/ddg_hw4_skeleton folder (and students are
+supposed to fill in the details) - links to the homework and to another
+implementation are in the readme's credits
+
+* update package versions (`ncu` or `ncu -u`)

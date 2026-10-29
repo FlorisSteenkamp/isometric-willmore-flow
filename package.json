@@ -1,0 +1,47 @@
+{
+    "name": "fairing",
+    "description": "Fairing: isometric Willmore flow of closed planar curves (Crane, Pinkall & Schröder 2013).",
+    "version": "0.0.1",
+    "author": {
+        "name": "Floris Steenkamp"
+    },
+    "license": "MIT",
+    "type": "module",
+    "engines": {
+        "node": ">=24.0.0"
+    },
+    "private": true,
+    "dependencies": {
+        "flo-bezier3": "^10.0.1",
+        "flo-boolean": "^6.0.5",
+        "react": "^19.3.1",
+        "react-dom": "^19.3.1"
+    },
+    "devDependencies": {
+        "@jest/globals": "^30.5.2",
+        "@swc/core": "^1.16.20",
+        "@swc/jest": "^0.2.39",
+        "@types/jest": "^30.0.0",
+        "@types/node": "^26.6.6",
+        "@types/react": "^19.3.0",
+        "@types/react-dom": "^19.3.0",
+        "concurrently": "^10.0.6",
+        "jest": "^30.5.2",
+        "jest-ts-webcompat-resolver": "^1.0.1",
+        "live-server": "^1.2.2",
+        "swc-loader": "^0.2.7",
+        "typescript": "^7.0.2",
+        "webpack": "^5.112.2",
+        "webpack-cli": "^7.2.3"
+    },
+    "scripts": {
+        "build": "npm run typecheck && webpack",
+        "typecheck": "node scripts/tsc-brief.mjs --noEmit -p .",
+        "test": "jest",
+        "dev": "concurrently \"webpack -w\" \"node scripts/tsc-brief.mjs --noEmit -w -p .\" \"live-server --host=127.0.0.1 --port=5502 --open=/index.html --watch=.noreload \""
+    },
+    "allowScripts": {
+        "@swc/core@1.16.20": true,
+        "unrs-resolver@1.12.2": true
+    }
+}

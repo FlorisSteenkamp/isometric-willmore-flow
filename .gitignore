@@ -1,0 +1,4 @@
+.nyc_output
+npm-debug.log
+/papers/
+node_modules
