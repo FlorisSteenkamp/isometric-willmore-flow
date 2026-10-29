@@ -2,6 +2,8 @@
 
 *Isometric Willmore flow of closed planar curves, in the browser.*
 
+**[▶ Live demo](https://florissteenkamp.github.io/isometric-willmore-flow/)**
+
 This is an interactive demo of the curve flow from Section 5 of
 [**Robust Fairing via Conformal Curvature Flow**](https://www.cs.cmu.edu/~kmcrane/Projects/ConformalWillmoreFlow/) by
 **Keenan Crane, Ulrich Pinkall and Peter Schröder** (ACM Transactions on
